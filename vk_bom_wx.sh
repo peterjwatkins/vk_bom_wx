@@ -7,7 +7,7 @@
 
 # There are two other functions in the script - wx_tts and wx_female
 #
-# wx_tts assembles a text file and a tts engine (at this stage, espeak) then generates
+# wx_tts assembles a text file and a text-to-speech (tts) engine (at this stage, espeak) then generates
 # a 'wav' file, then converted to a 'ul' file for tx by asterisk.
 #
 # wx_female uses the data, using prepared ulaw files, to generate a 'ul' file for tx by asterisk.
@@ -17,6 +17,8 @@
 # Still more work to be done - error trapping, other states
 # possibly, converting 'get_temp_vk' to Asterisk as well.
 #
+
+###### Assumes that sox and espeak are already installed
 
 # ---- Script variables
 Location=$1
